@@ -7,8 +7,13 @@ Gem::Specification.new do |s|
   s.description = "Ruby gem that provides a Medium.com read-only API"
   s.authors     = ["uesteibar"]
   s.email       = 'uesteibar@gmail.com'
-  s.files       = ["lib/medium-scrapper.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/medium-scrapper'
+  s.files       = [
+    "lib/medium-scrapper.rb",
+    "lib/model/user.rb",
+    "lib/model/post.rb",
+    "lib/retriever/posts_retriever.rb",
+    "lib/collection/posts_collection.rb",
+  ]
+  s.homepage    = 'http://rubygems.org/gems/medium-scrapper'
   s.license       = 'MIT'
 end

@@ -1,6 +1,2 @@
 
-class Medium
-  def initialize(username)
-    @user = username
-  end
-end
+MediumScrapper = class.new
