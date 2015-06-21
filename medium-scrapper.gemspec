@@ -1,8 +1,8 @@
 
 Gem::Specification.new do |s|
   s.name        = 'medium-scrapper'
-  s.version     = '0.0.1'
-  s.date        = '2015-06-20'
+  s.version     = '0.0.2'
+  s.date        = '2015-06-21'
   s.summary     = "medium read-only api"
   s.description = "Ruby gem that provides a Medium.com read-only API"
   s.authors     = ["uesteibar"]
