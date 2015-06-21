@@ -1,9 +1,10 @@
 
 class Post
-  attr_reader :title, :body
+  attr_reader :title
   
-  def initialize(title, body)
+  def initialize(title, subtitle, content)
     @title = title
-    @body = body
+    @subtitle = subtitle
+    @content = content
   end
 end
