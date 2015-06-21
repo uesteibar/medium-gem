@@ -11,8 +11,10 @@ Gem::Specification.new do |s|
     "lib/medium-scrapper.rb",
     "lib/model/user.rb",
     "lib/model/post.rb",
-    "lib/retriever/posts_retriever.rb",
-    "lib/collection/posts_collection.rb",
+    "lib/retriever/post_retriever.rb",
+    "lib/retriever/user_retriever.rb",
+    "lib/builder/user_builder.rb",
+    "lib/parser/url_parser.rb",
   ]
   s.homepage    = 'http://rubygems.org/gems/medium-scrapper'
   s.license       = 'MIT'
