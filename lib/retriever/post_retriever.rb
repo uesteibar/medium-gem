@@ -9,7 +9,10 @@ class PostRetriever
   def load(user_id, post_id)
     parsed_url = parse_url(user_id, post_id)
 
-    Post.new(parsed_url["title"], parsed_url["content"]["subtitle"], normalize_content(parsed_url["content"]["bodyModel"]["paragraphs"]))
+    Post.new(parsed_url["title"],
+      parsed_url["content"]["subtitle"],
+      normalize_content(parsed_url["content"]["bodyModel"]["paragraphs"]),
+      parsed_url["canonicalUrl"])
   end
 
   def normalize_content(paragraphs_raw)

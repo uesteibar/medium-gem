@@ -21,4 +21,5 @@ Post object:
 		:title #=> post title
 		:subtitle #=> post subtitle
 		:content #=> full post content
+		:url #=> post url
 
