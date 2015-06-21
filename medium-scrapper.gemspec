@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
     "lib/builder/user_builder.rb",
     "lib/parser/url_parser.rb",
   ]
-  s.homepage    = 'http://rubygems.org/gems/medium-scrapper'
+  s.homepage    = 'https://github.com/uesteibar/medium-gem'
   s.license       = 'MIT'
 end
