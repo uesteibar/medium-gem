@@ -1,5 +1,7 @@
 # Ruby gem that provides a Medium.com read-only API
 
+[https://rubygems.org/gems/medium-scrapper](https://rubygems.org/gems/medium-scrapper)
+
 -> to get a medium.com user
 
 		user = MediumScrapper.new.load_user("uesteibar")
