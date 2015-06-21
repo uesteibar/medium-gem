@@ -1,16 +1,16 @@
 
 class User
-  attr_accessor :name, :username, :user_id, :bio
+  attr_reader :name, :username, :user_id, :bio, :posts
 
-  def initialize
+  def initialize(name, username, user_id, bio)
+    @name = name
+    @username = username
+    @user_id = user_id
+    @bio = bio
     @posts = []
   end
 
   def add_post(post)
     @posts << post
-  end
-
-  def posts
-    @posts
   end
 end

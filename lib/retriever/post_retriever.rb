@@ -1,16 +1,15 @@
+
 require "./lib/model/post"
 
 class PostRetriever
-  def load(user_id, post_id)
-    content = ""
-    open("https://www.medium.com/@#{user_id}/#{post_id}?format=json") do |file| 
-      file.each_line do |line|
-        content << line
-      end
-    end
+  def initialize(parser)
+    @parser = parser
+  end
 
-    parsed = JSON.parse(content[16..-1])["payload"]["value"]
-    Post.new(parsed["title"], parsed["content"]["subtitle"], normalize_content(parsed["content"]["bodyModel"]["paragraphs"]))
+  def load(user_id, post_id)
+    parsed_url = parse_url(user_id, post_id)
+
+    Post.new(parsed_url["title"], parsed_url["content"]["subtitle"], normalize_content(parsed_url["content"]["bodyModel"]["paragraphs"]))
   end
 
   def normalize_content(paragraphs_raw)
@@ -19,5 +18,9 @@ class PostRetriever
       body << paragraph["text"] + "\n\n"
     end
     body
+  end
+
+  def parse_url(user_id, post_id)
+    @parser.new("https://www.medium.com/@#{user_id}/#{post_id}?format=json").parse["value"]
   end
 end
