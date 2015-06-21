@@ -1,5 +1,6 @@
-require "./lib/retriever/user_retriever"
-require "./lib/parser/url_parser"
+
+require "retriever/user_retriever"
+require "parser/url_parser"
 
 class MediumScrapper
   attr_reader :user

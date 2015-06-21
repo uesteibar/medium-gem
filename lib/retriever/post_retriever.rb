@@ -1,5 +1,5 @@
 
-require "./lib/model/post"
+require "model/post"
 
 class PostRetriever
   def initialize(parser)

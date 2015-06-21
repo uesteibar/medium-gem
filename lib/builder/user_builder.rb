@@ -1,5 +1,5 @@
 
-require "./lib/model/user"
+require "model/user"
 
 class UserBuilder
   def initialize(raw_user)

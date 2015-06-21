@@ -1,6 +1,6 @@
 
-require "./lib/builder/user_builder"
-require "./lib/retriever/post_retriever"
+require "builder/user_builder"
+require "retriever/post_retriever"
 
 class UserRetriever
   def initialize(parser)
