@@ -1,5 +1,5 @@
 
-class User
+class MediumUser
   attr_reader :name, :username, :user_id, :bio, :posts
 
   def initialize(name, username, user_id, bio)

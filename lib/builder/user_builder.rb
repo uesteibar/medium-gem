@@ -1,5 +1,5 @@
 
-require "model/user"
+require "model/medium-user"
 
 class UserBuilder
   def initialize(raw_user)
@@ -12,6 +12,6 @@ class UserBuilder
     user_id = @raw_user["userId"]
     bio = @raw_user["bio"]
 
-    User.new(name, username, user_id, bio)
+    MediumUser.new(name, username, user_id, bio)
   end
 end
