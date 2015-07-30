@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'medium-scrapper'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2015-06-21'
   s.summary     = "medium read-only api"
   s.description = "Ruby gem that provides a Medium.com read-only API"
@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = 'uesteibar@gmail.com'
   s.files       = [
     "lib/medium-scrapper.rb",
-    "lib/model/user.rb",
+    "lib/model/medium-user.rb",
     "lib/model/post.rb",
     "lib/retriever/post_retriever.rb",
     "lib/retriever/user_retriever.rb",
