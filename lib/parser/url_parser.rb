@@ -1,4 +1,3 @@
-
 require "open-uri"
 require "json"
 
@@ -9,7 +8,7 @@ class UrlParser
 
   def parse
     content = ""
-    open(@url) do |file| 
+    open(@url) do |file|
       file.each_line do |line|
         content << line
       end

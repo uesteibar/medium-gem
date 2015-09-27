@@ -1,4 +1,3 @@
-
 require "retriever/user_retriever"
 require "parser/url_parser"
 
