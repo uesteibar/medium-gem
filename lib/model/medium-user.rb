@@ -1,4 +1,3 @@
-
 class MediumUser
   attr_reader :name, :username, :user_id, :bio, :posts
 

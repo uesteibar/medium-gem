@@ -1,4 +1,3 @@
-
 require "model/medium-user"
 
 class UserBuilder
