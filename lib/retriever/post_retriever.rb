@@ -1,4 +1,3 @@
-
 require "model/post"
 
 class PostRetriever
