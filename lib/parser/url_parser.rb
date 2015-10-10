@@ -7,12 +7,18 @@ class UrlParser
   end
 
   def parse
+    JSON.parse(content[16..-1])["payload"]
+  end
+
+  private
+  
+  def content
     content = ""
     open(@url) do |file|
       file.each_line do |line|
         content << line
       end
     end
-    JSON.parse(content[16..-1])["payload"]
+    content
   end
 end
