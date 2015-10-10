@@ -1,5 +1,4 @@
-
-require "model/medium-user"
+require "model/medium_user"
 
 class UserBuilder
   def initialize(raw_user)

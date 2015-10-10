@@ -1,4 +1,3 @@
-
 require "builder/user_builder"
 require "retriever/post_retriever"
 
